@@ -24,6 +24,22 @@
         }
     ]
 
+    // when object will big, custom object create
+    interface User {
+        name: string;
+        age: number
+    }
+    const user2: GenerecArray<User> = [
+        {
+            name: 'sei',
+            age: 12
+        },
+        {
+            name: 'tai',
+            age: 13
+        }
+    ]
+
 
     // generic tuple
     type GenericTuple<X, Y> = [X, Y];
